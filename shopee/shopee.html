@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    body {
+        background-color: #ccc;
+    }
+
+    .wrap {
+        margin: auto;
+        background-color: #fff;
+        width: 1200px;
+        font-size: 20px;
+    }
+
+    .header a {
+        text-decoration: none;
+        color: #d0011b;
+    }
+
+    .header span {
+        background-color: #d0011b;
+        color: #fff;
+        border-radius: 50%;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .header {
+        display: flex;
+        height: 40px;
+        border-bottom: 1px #eee solid;
+        padding: 10px;
+        margin-bottom: 10px;
+        align-items: center;
+
+    }
+
+    .header-group {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1100px;
+    }
+
+    .header-left {
+        display: flex;
+    }
+
+    .header-item {
+        display: flex;
+        margin: 10px;
+    }
+
+    .header-group img {
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: auto;
+    }
+
+    .header-right span {
+        padding: 0 0 2px 1px;
+        font-size: 19px;
+    }
+
+    .split {
+        margin: auto 10px;
+        color: #ccc
+    }
+
+    .main {
+        display: flex;
+        max-width: 1200px;
+    }
+
+    .main-left {
+        width: 400px;
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    .main-left img {
+        height: 100%;
+    }
+
+    .main-right {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    .main-right img {
+        width: 160px;
+        padding: 0;
+    }
+
+    .main-item {
+        width: 170px;
+        margin: 0 auto;
+    }
+
+    .main-item p {
+        text-align: center;
+        color: #d0011b;
+        margin: 0;
+    }
+</style>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <a href="#">蝦皮商城</a>
+            <div class="header-group">
+                <div class="header-left">
+                    <div class="header-item">
+                        <p class="split">|</p>
+                        <img
+                            src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/homepage/6c502a2641457578b0d5f5153b53dd5d.png">
+                        <p>15天鑑賞期</p>
+                    </div>
+                    <div class="header-item">
+                        <img
+                            src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/homepage/16ead7e0a68c3cff9f32910e4be08122.png">
+                        <p>蝦皮安心退</p>
+                    </div>
+                    <div class="header-item">
+                        <img
+                            src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/homepage/511aca04cc3ba9234ab0e4fcf20768a2.png">
+                        <p>正品保障</p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-item">
+                        <a href="#">查看全部 <span class="header-pic">></span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main">
+            <div class="main-left">
+                <a href="#"><img src="https://cf.shopee.tw/file/a78a3f79065403f10eb1f050da6ebc35"></a>
+            </div>
+            <div class="main-right">
+                <div class="main-item">
+                    <a href="#"><img src="https://cf.shopee.tw/file/abefb0aa53d9e224a008785b885eec67_xhdpi"></a>
+                    <p>全館5折up</p>
+                </div>
+                <div class="main-item">
+                    <a href="#"><img src="https://cf.shopee.tw/file/de26e72cf83865a3d92de09d44747a56_xhdpi"></a>
+                    <p>滿$299折$50</p>
+                </div>
+                <div class="main-item">
+                    <a href="#"><img src="https://cf.shopee.tw/file/cb91110df2cc673af2c5697b5738ddc6_xhdpi"></a>
+                    <p>全館47折up</p>
+                </div>
+                <div class="main-item">
+                    <a href="#"><img src="https://cf.shopee.tw/file/379719824237ce73226a4bdf8bf004cc_xhdpi"></a>
+                    <p>國際書展領券85折</p>
+                </div>
+                <div class="main-item">
+                    <a href="#"><img src="https://cf.shopee.tw/file/22607dbc84db58a2d85d72b1cc9a8c93_xhdpi"></a>
+                    <p>最強3C領券再折</p>
+                </div>
+                <div class="main-item">
+                    <a href="#"><img src="https://cf.shopee.tw/file/195d0ab56a32de7438c9468dca6b9924_xhdpi"></a>
+                    <p>蝦幣最高30倍送</p>
+                </div>
+                <div class="main-item">
+                    <a href="#"><img src="https://cf.shopee.tw/file/e186e8638507a28551f434462b92a310_xhdpi"></a>
+                    <p>全店超商99免運</p>
+                </div>
+                <div class="main-item">
+                    <a href="#"><img src="https://cf.shopee.tw/file/869ea56c2d7053fee5b041c5c331ffc6_xhdpi"></a>
+                    <p>盛大進駐關注領券</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

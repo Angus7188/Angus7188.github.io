@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <script src="https://kit.fontawesome.com/9fd2957bbe.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: rgb(32, 33, 36);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            align-items: center;
+            margin-bottom: 100px;
+            padding:0 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .header ul {
+            display: flex;
+            align-content: center;
+        }
+
+        .header li {
+            margin: 5px;
+        }
+
+        .store a {
+            color: #ccc;
+        }
+        .funtion ul{
+            align-items: center;
+        }
+
+        .funtion div {
+            width: 20px;
+            margin:0 10px;
+        }
+        .funtion li:last-child{
+            width: 40px;
+            height: 40px;
+        }
+        .funtion img{
+            width: 100%;
+        }
+
+        .google-logo{
+            width: 300px;
+            display: block;
+            margin: 0 auto 30px;
+            text-align: center;
+        }
+        .google-logo img{
+            width: 100%;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        input{
+            height: 100%;
+            width: 500px;
+            border: none;
+        }
+        input:focus{
+            outline: none;
+        }
+        input:focus::placeholder {
+            color: transparent;
+        }
+        .main div:not([type="search"]){
+            background-color: #fff;
+            padding: 13px;
+        }
+        .main div:first-child{
+            border-radius: 50% 0 0 50%;
+        }
+        .main div:last-child{
+            border-radius: 0 50% 50% 0;
+        }
+
+        .path ul {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .path li {
+            padding: 20px 50px;
+            background-color: #222;
+            height: 100px;
+        }
+
+        .path li:hover {
+            background-color: #555;
+            border-radius: 5%;
+        }
+
+        .path p {
+            color: #fff;
+            font-weight: bold;
+            background-color: transparent;
+            margin-top: 15px;
+        }
+
+        .path li div{
+            width: 60px;
+            height: 60px;
+            background-color: #111;
+            border-radius: 50%;   
+
+        }
+        .yt div p{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            display: block;
+            padding-top: 15px;
+        }
+        .plus div p{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            display: block;
+            padding-top: 15px;
+            font-size: 30px;
+        }
+
+        i {
+            color: #f00;
+            width: 100%;
+            font-size: 30px;
+            display:block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="store">
+            <ul>
+                <li><a href="#">關於Google</a></li>
+                <li><a href="#">Google商店</a></li>
+            </ul>
+        </div>
+
+        <div class="funtion">
+            <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">圖片</a></li>
+                <li><a href="#">
+                        <div><img src="more.png" alt="more"></div>
+                    </a></li>
+                <li><a href="#">
+                        <img src="bio.png" alt="account">
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="google-logo"><img src="google.logo.png" alt="google.logo"></div>
+
+    <div class="main">
+        <div>
+            <img src="search.svg" alt="search">
+        </div>
+            <input type="search" placeholder="搜尋Google或輸入網址">
+        <div>
+            <a href=""><img src="googlemic..svg" alt=""></a>
+        </div>
+    </div>
+
+        <div class="path">
+            <ul>
+                <li class="yt"><a href="#"><div><p><i class="fa-brands fa-youtube"></i></p></div>
+                        <p>Youtube</p>
+                    </a> </li>
+                <li class="plus"><a href="#"><div><p>+</p></div>
+                        <p>新增捷徑</p>
+                    </a></li>
+            </ul>
+        </div>
+
+</body>
+
+</html>

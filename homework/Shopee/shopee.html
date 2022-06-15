@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee</title>
+    <link rel="stylesheet" href="/reset.css">
+
+</head>
+<style>
+    body{
+        background-color: #ccc;
+    }
+    .wrap {
+        background-color: #fff;
+        width: 1200px;
+        margin: auto;
+        padding: 20px 10px 0 20px;
+        list-style: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        line-height: 30px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+    }
+
+    ul:first-child {
+        display: flex;
+        width: 50%;
+    }
+
+    .header ul li {
+        font-size: 20px;
+        display: flex;
+    }
+
+    .header div {
+        width: 30px;
+        margin: 0 10px;
+    }
+
+    .header img {
+        width: 100%;
+    }
+
+    svg {
+        background-color: #d0011b;
+        stroke: #fff;
+        border-radius: 50%;
+        display: inline-block;
+        width: 15px;
+        padding: 3px;
+        text-align: center;
+        margin-left: 5px;
+        vertical-align: -10%;
+    }
+
+    .header div:last-child {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 20px;
+    }
+
+    .header a {
+        text-decoration: none;
+        color: #d0011b;
+    }
+    .header li:first-child::after{
+        content: "|";
+        font-size: 30px;
+        color: #ccc;
+        margin-left: 10px;
+    }
+    .main{
+        display: flex;
+        width: 1200px;
+    }
+    .main ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        align-content: space-around;
+    }
+    .main li {
+        width: 25%;
+    }
+    .main img{
+        width: 100%;
+        vertical-align: bottom;
+    }
+    .promote-pic{
+        width: 40%;
+    }
+    .main p {
+        text-align: center;
+        color: #d0011b;
+        margin: 0;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 2em;
+    }
+    
+
+</style>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <ul>
+                <li> <a href="#">蝦皮商城</a></li>
+                <li>
+                    <div><img src="top-pic1.png"></div>
+                    <p>15天鑑賞期</p>
+                </li>
+                <li>
+                    <div><img src="top-pic2.png"></div>
+                    <p>蝦皮安心退</p>
+                </li>
+                <li>
+                    <div><img src="top-pic3.png"></div>
+                    <p>正品保障</p>
+                </li>
+            </ul>
+            <div><a href="#">查看全部<svg enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
+                        class="shopee-svg-icon icon-arrow-right">
+                        <path
+                            d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z">
+                        </path>
+                    </svg></a>
+            </div>
+        </div>
+
+
+        <div class="main">
+            <div class="promote-pic">
+                <a href="#"><img src="ad-pic1.png"></a>
+            </div>
+            <ul>
+                <li> <a href="#"><div><img src="ad-pic2.jpg"></div></a>
+                    <p>全館5折up</p>
+                </li>
+                <li> <a href="#"><div><img src="ad-pic3.png"></div></a>
+                    <p>滿$299折$50</p>
+                </li>
+                <li><a href="#"><div><img src="ad-pic4.jpg"></div></a>
+                    <p>全館47折up</p>
+                </li>
+                <li> <a href="#"><div><img src="ad-pic5.png"></div></a>
+                    <p>國際書展領券85折</p>
+                </li>
+                <li> <a href="#"><div><img src="ad-pic6.png"></div></a>
+                    <p>最強3C領券再折</p>
+                </li>
+                <li><a href="#"><div><img src="ad-pic7.jpg"></div></a>
+                    <p>蝦幣最高30倍送</p>
+                </li>
+                <li> <a href="#"><div><img src="ad-pic8.jpg"></div></a>
+                    <p>全店超商99免運</p>
+                </li>
+                <li><a href="#"><div><img src="ad-pic9.jpg"></div></a>
+                    <p>盛大進駐關注領券</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

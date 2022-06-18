@@ -1,15 +1,23 @@
 html{
-    scroll-behavior: smooth;
-    
+    scroll-behavior: smooth; 
 }
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
+    font-size: 20px;
 }
-.top-btn{
+a{
+    color: #000;
+}
+
+.toTop-btn:hover{
+    background-color: rgb(255, 180, 180);
+    transition: .5s;
+}
+.toTop-btn{
     position: fixed;
-    width: 40px;
-    height: 40px;
+    width: 2.5em;
+    height: 2.5em;
     background-color: #111;
     border-radius: 50%;
     right: 10px;
@@ -17,27 +25,20 @@ html{
     z-index: 1;
     color: #fff;
     text-align: center;
-    line-height: 40px;
+    line-height:2.5em;
+    padding: 0;
 }
-.top-btn:hover{
-    background-color: rgb(255, 180, 180);
-    transition: .5s;
-}
-a{
-    color: #000;
-}
-
-.about {
+.about{
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    width: 80%;
     margin: auto;
 }
 
 .about ul {
     display: flex;
     color: #777;
-    line-height: 50px;
+    line-height: 3em;
 }
 .about address a:hover{
     color: rgb(255, 184, 187);
@@ -46,16 +47,11 @@ a{
 
 .about ul:first-child li:first-child::after {
     content: "|";
-    padding: 5px;
+    padding: .5em;
 }
-.nav-search li{
-    width: 65px;
-    text-align: center;
-}
-
 .about ul:not(:nth-child(1)) li:not(:nth-child(4)) {
     border-right: 1px solid #eee;
-    padding: 0 15px;
+    padding: 0 1em;
     position: relative;
 }
 .count{
@@ -67,21 +63,31 @@ a{
     text-align:center;
     color: #fff;
     top: 7px;
-    right: 25px;
-    line-height: 20px;
+    right: 1em;
+    line-height: 1em;
+}
+.search-list li{
+    width: 4em;
+    text-align: center;
 }
 
-.about ul:last-child input {
+.about ul:not(:nth-child(1)) li:not(:nth-child(4)) {
+    border-right: 1px solid #eee;
+    padding: 0 .5em;
+    position: relative;
+}
+.about input {
     border: none;
-    padding-left: 15px;
-    width: 100px;
+    padding-left: 1em;
+    width: 4em;
+    font-size: 1em;
 }
 
-.about ul:last-child input:focus {
+.about input:focus {
     outline: none;
 }
 
-.about ul:last-child .fa-magnifying-glass:hover {
+.fa-magnifying-glass:hover {
     color: rgb(255, 184, 187);
 }
 
@@ -89,22 +95,22 @@ a{
     border-bottom: 3px solid rgb(255, 184, 187);
     margin-bottom: -3px;
 }
-
 .split {
     border-bottom: 1px solid #eee;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
     vertical-align: bottom;
 }
-/* ======================================================================== */
+/* ============================================= */
 .nav {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
-    margin: 20px auto;
+    width: 80%;
+    margin: 1em auto;
 }
 
-nav .logo {
-    padding: 5px;
+.nav h1 {
+    width: 1px;
+    overflow: hidden;
 }
 
 .logo img {
@@ -112,7 +118,7 @@ nav .logo {
 }
 
 .menu ul,
-.society ul {
+.community ul {
     display: flex;
 }
 .menu li:first-child a{
@@ -120,34 +126,39 @@ nav .logo {
 }
 
 .menu li {
-    padding: 20px;
+    padding: 1em;
     font-weight: 900;
 }
-.menu li a:hover{
+.menu a:hover{
     color: rgb(255, 184, 187);
     transition: .5s;
 }
 
-.society li {
-    padding: 10px;
-    line-height: 35px;
+.community li {
+    padding: .5em;
+    line-height: 2em;
 }
 
-.nav .society  li i {
+.nav .community i {
     color: #bbb;
 }
 
-.nav .society li i:hover {
+.nav .community i:hover {
     color: #000;
     transition: .5s;
 }
-/* =================================================================== */
+/* =================================== */
 .discount {
     background-color: rgb(251, 251, 252);
     position: relative;
 }
+.discount h2{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 
-.discount .main-pic {
+.discount div:first-child {
     width: 1200px;
     margin: auto;
 }
@@ -157,8 +168,8 @@ nav .logo {
 }
 
 .discount h3 {
-    font-weight: 800;
-    font-size: 17px;
+    font-weight: 600;
+    font-size: 1em;
 }
 
 .discount ul {
@@ -171,8 +182,8 @@ nav .logo {
 
 .discount li {
     flex-grow: 1;
-    margin: 30px 0;
-    padding: 10px;
+    margin: 1em 0;
+    padding: 1em;
 }
 .discount li p{
     color: #aaa;
@@ -180,7 +191,7 @@ nav .logo {
 
 .discount li:nth-child(1) {
     background-color: rgb(255, 229, 229);
-    margin-right: 10px;
+    margin-right: .5em;
 }
 
 .discount li:nth-child(2) {
@@ -189,31 +200,31 @@ nav .logo {
 
 .discount li:nth-child(3) {
     background-color: rgb(255, 245, 229);
-    margin-left: 10px;
+    margin-left: .5em;
 }
-/* ====================================================================== */
-.shop-categories{
+/* ================================================ */
+.style-types{
     width: 1200px;
     margin: auto;
-    padding: 50px 0;
+    padding: 2.5em 0;
 }
 
-.shop-categories h2{
+.style-types h2{
     text-align: center;
-    font-size: 20px;
-    margin: 80px;
+    font-size: 1.5em;
+    margin: 4em;
 }
 
-.shop-categories .style-list{
+.style-types .style-list{
     display: flex;
     justify-content: space-between;
 }
 .style-list img{
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 .style-list li h3{
-    padding: 10px;
+    padding: .5em;
 }
 .style-list li h3::before{
     content: "— ";
@@ -222,67 +233,72 @@ nav .logo {
     color: rgb(255, 184, 187);
     transition: .5s;
 }
-.shop-categories-bcc{
+.types-bcc{
     background-color: rgb(255, 236, 229);
     width: 100%;
-    height: 360px;
+    height: 22em;
     position: absolute;
     z-index: -1;
-    top: 1200px;
+    top: 75em;
 }
-/* ========================================================== */
+/* ========================================== */
 .favourite{
     display: flex;
     width: 1200px;
     margin: auto;
     position: relative;
-    padding: 30px;
+    margin: 5em auto;
 }
 .favourite-pic{
     width: 50%;
-    padding: 50px;
+    padding-right: 2em;
 }
 .favourite-pic img{
-    width: 100%;
+    width: 80%;
 }
 .favorite-text{
     width: 50%;
-    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .favorite-text h2{
-    font-size: 40px;
+    font-size: 2em;
     width: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 .favorite-text p{
     width: 50%;
-    font-size: 17px;
+    font-size: 1em;
     color:rgb(113, 113, 118) ;
     margin-bottom: 40px;
 }
-.favorite-text a{
-    font-weight: bold;
-    color: #fff;
-    background-color: #000;
-    padding: 15px 20px;
-    font-size: 12px;
+.favorite-text div{
+    text-align: center;
+    width: 6em;
 }
 .favourite-bcc{
     background-color: rgb(246, 246, 246);
-    width: 500px;
-    height: 400px;
+    width: 30em;
+    height: 24em;
     position: absolute;
-    left: 140px;
+    top: -3em;
+    left: 4em;
     z-index: -1;
 }
-.shopnow a:hover{
+.shop-btn{
+    display: inline-block;
+    background-color: #000;
+    padding: 1em;
+}
+.shop-btn a{
+    color: #fff
+}
+.shop-btn:hover{
     background-color: rgb(255, 184, 187);
     transition: .5s;
 }
-/* ============================================================== */
+/* ============================== */
 .fitting{
     display: flex;
     width: 100%;            
@@ -296,24 +312,25 @@ nav .logo {
     padding-top: 50px;
     font-size: 30px;
 }
+
 .fitting h3::after{
     content: '';
     display: block;
     width: 0%;
     height: 3px;
-    margin: 10px auto;
+    margin: .5em auto;
     background-color: #fff;
     
 }
 .fitting div:hover h3::after{
-    width: 70%;
+    width: 75%;
     transition: .5s ;
 }
 .fitting p{
     text-align: center;
     width: 55%;
     margin: auto;
-    padding-bottom: 20px;
+    padding-bottom: 1em;
 }
 .fitting img{
     width: 75%;
@@ -332,15 +349,15 @@ nav .logo {
 .sunglasses{
     background-color:rgb(255, 245, 229) ;
 }
-/* ================================================================ */
+/* =================================================== */
 .models{
     width: 90%;
     margin: auto;;
 }
 .models h2{
     text-align: center;
-    margin: 40px;
-    font-size: 24px;
+    margin: 2em;
+    font-size: 1.5em;
 }
 .model-list ul{
     display: flex;
@@ -350,13 +367,13 @@ nav .logo {
 .model-list li{
     width: 270px;
     margin: 15px;
-    line-height: 20px;
+    line-height: 1.5em;
     position: relative;
 }
 .model-list img{
     width: 100%;
 }
-.model-list li h3{
+.model-list h3{
     font-size: 12px;
     padding: 3px 0;
     color: #aaa;
@@ -370,7 +387,7 @@ nav .logo {
     padding: 3px 10px;
     color: #fff;
     position: absolute;
-    top: 20px;
+    top: 1em;
     right: 0;
 }
 .model-list li div:first-child{
@@ -388,7 +405,7 @@ nav .logo {
     opacity: 30%;
     transition: .5s;
 }
-/* =============================================================== */
+/* ========================================= */
 .banner{
     background-image: url(./banner.webp);
     background-size: 100%;
@@ -396,8 +413,8 @@ nav .logo {
     text-align: center;
     color: #fff;
     font-weight: 900;
-    line-height: 50px;
-    padding: 100px;
+    line-height: 2.5em;
+    padding: 5em;
 }
 
 .banner h3{
@@ -470,53 +487,54 @@ nav .logo {
     width: 1200px;
     display: flex;
     background-color: rgb(255, 236, 229);
-    padding: 20px;
+    padding: 1em;
     margin: auto;
     box-sizing: border-box;
 }
 .subscribe h3{
     width: 50%;
-    padding: 0 20px;
-    font-size: 25px;
+    padding: 0 1em;
+    font-size: 1.6em;
     display: block;
     margin: auto;
 }
 .subscribe div:not(.buttom){
     width: 50%;
     display: flex;
-    padding: 0 10px;
+    padding: 0 .5em;
 
 }
 .subscribe input{
-    width: 80%;
+    width: 150%;
     margin-right: 10px;
     border: none;
-    padding-left: 20px;
+    padding-left: 1em;
+    font-size: 1em;
 }
 .subscribe input:focus{
     outline: none;
 }
-
-.buttom{
-    background-color: #000;
+.subscribe-btn a{
     color: #fff;
-    padding: 20px;
+    background-color: #000;
+    padding: 1em 1.5em;
 }
-.buttom:hover{
-    background-color: rgb(255, 184, 187);
+.subscribe-btn a:hover{
+    background-color: rgb(255, 180, 180);
     transition: .5s;
 }
+
 /* ============================================ */
-.IG{
+.ig{
     padding-top: 60px;
 }
-.IG h2{
+.ig h2{
     text-align: center;
-    font-size: 25px;
+    font-size: 2em;
 }
-.IG p{
+.ig p{
     color: #aaa;
-    margin: 30px 0 0 30px;
+    margin: 2em 0 0 2em;
 }
 /* =============================================== */
 .footer{
@@ -549,16 +567,61 @@ color: #fff;
     color: rgb(239, 174, 180);
     transition: .5s;
 }
-.footer .society{
+.footer .community{
     justify-content: flex-end;
 }
 .footer li{
     font-weight: lighter;
 }
-.footer h3{
-    font-weight: 600;
-    font-size: 20px;
+.footer h2{
+    font-weight: 900;
+    font-size: 1em;
+    margin-bottom: 1em;
 }
-.footer .society:hover{
-    color: rgb(239, 174, 180);
+/* =========================================== */
+.block{
+width: 40em;
+height: 40em;
+position:fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+z-index: 2;
+}
+.block-bcc{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 60%;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.remove-btn{
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -1em;
+    right: -1em;
+    cursor: pointer;
+}
+label{
+    cursor: pointer;
+}
+.block img{
+    width: 100%;
+}
+#ad-crl{
+    display: none;
+}
+input:checked + .block{
+    display: none;
 }

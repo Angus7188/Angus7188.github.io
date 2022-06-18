@@ -107,7 +107,9 @@ a{
     width: 80%;
     margin: 1em auto;
 }
-
+.logo{
+    margin-bottom: -1em;
+}
 .nav h1 {
     width: 1px;
     overflow: hidden;

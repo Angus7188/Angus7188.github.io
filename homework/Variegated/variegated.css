@@ -91,7 +91,7 @@ a{
     color: rgb(255, 184, 187);
 }
 
-.nav-search li:nth-child(n+1):nth-child(-n+3):hover {
+.search-list li:nth-child(n+1):nth-child(-n+3):hover {
     border-bottom: 3px solid rgb(255, 184, 187);
     margin-bottom: -3px;
 }

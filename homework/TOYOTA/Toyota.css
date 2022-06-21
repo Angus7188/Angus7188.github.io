@@ -81,10 +81,16 @@ body{
     display: inline-block;
     padding: 1px 5px;
     border-radius: 7%;
+    font-weight: 800;
+}
+.container .main-content li{
+    color: #888;
+    font-weight: 600;
 }
 .container .main-content ul ul li{
     display: flex;
 }
+
 .container .main-content ul ul li::before{
     content: '．';
     font-size: 1.5em;

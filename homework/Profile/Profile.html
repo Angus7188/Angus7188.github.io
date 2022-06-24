@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./reset.css">
     <style>
         .container{
-            width: 800px;
+            max-width: 768px;
             margin: auto;
             border: 5px  #ccc;
             border-style: dotted dashed solid double;
@@ -27,7 +27,7 @@
         img{
             width: 100%;
             filter: drop-shadow(10px 10px 10px #000);
-            margin: 10px;
+            margin:auto 10px;
         }
         .info{
             line-height: 2em;
@@ -37,11 +37,24 @@
         }
         .pic-group{
             width: 100%;
+        }
+        .pic-group img{
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        @media screen and (min-width: 768px) {
+            .container{
+                max-width: 1000px;
+            }
+        .pic-group{
+            width: 100%;
             display: flex;
             justify-content: space-evenly;
         }
         .pic-group img{
             width: 30%;
+        }
         }
     </style>
 </head>

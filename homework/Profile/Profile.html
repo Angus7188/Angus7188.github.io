@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        .container{
+            width: 800px;
+            margin: auto;
+            border: 5px solid #ccc;
+            padding: 20px;
+        }
+        img{
+            width: 100%;
+            filter: drop-shadow(10px 10px 10px #000);
+        }
+        .info{
+            line-height: 2em;
+            margin: 20px;
+            font-size: 20px;
+            font-weight: 900;
+        }
+        .pic-group{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .pic-group img{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div><img src=""  id="pic1"></div>
+        <div class="info">
+            <h2></h2>
+            <h2></h2>
+            <h2></h2>
+            <h2></h2>
+        </div>
+        <div class="pic-group">            
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </div>
+    
+
+
+    <script>
+        let person = {
+            name : "鐺鐺", 
+            email : "c8c8c8@gmail.com",
+            adress : "胯下痛公寓",
+            habbit : [
+                "罵粗話",
+                "玩電腦",
+                "睡搞搞"
+            ]    
+        }
+        const main_pic = "./pic-0.jpg";
+        let daily_pic = [
+            "./pic-3.png",
+            "./pic-2.png",
+            "./pic-1.png"
+        ]
+        document.getElementById("pic1").setAttribute("src", main_pic);
+
+        document.querySelector("h2:nth-child(1)").innerHTML=`姓名 : ${person.name}`;
+        document.querySelector("h2:nth-child(2)").innerHTML=`信箱 : ${person.email}`;
+        document.querySelector("h2:nth-child(3)").innerHTML=`住處 : ${person.adress}`;
+        document.querySelector("h2:nth-child(4)").innerHTML=`興趣 : ${person.habbit}`;
+
+        daily_pic.forEach((url, index)=>{
+            let item = document.querySelector(`.pic-group img:nth-child(${index+1})`);
+            item.setAttribute('src', url);
+        });
+    </script>
+</body>
+</html>

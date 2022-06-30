@@ -1,0 +1,408 @@
+html{
+    scroll-behavior: smooth;
+}
+.top-btn{
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+    filter: drop-shadow(0 0 2px #555);
+    width: 25px;
+    height: 25px;
+    /* border: 1px solid #000; */
+    text-align: center;
+    line-height: 25px;
+    background-color: #fff;
+    z-index: 3;
+}
+.top-btn i{
+    color: rgb(81, 132, 50);
+}
+ a {
+    text-decoration: none;
+    color: #000;
+}
+.header {
+    max-width: 100%;
+    background-image: url(./banner1-bcc.webp);
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 50px;
+}
+.logo {
+    width: 20%;
+}
+.header img {
+    width: 60%;
+}
+.hb, .menu{
+    display: none;
+}
+nav ul{
+    display: flex;
+    width: 33.3333%;
+}
+nav li{
+    flex-grow: 1;
+    font-size: 14px;
+    margin: 10px;
+}
+.fncList{
+    display: flex;
+    align-items: center;
+}
+.fncList a{
+    margin: 10px;
+}
+.fncList .count{
+    position: absolute;
+    font-size: 10px;
+    right: 2px;
+    top: 15px;
+}
+/* =========================================== */
+.banner{
+    width: 100%;
+    background-image: url(./banner1-bcc.webp);
+}
+.banner .container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.banner .container {
+    width: 70%;
+}
+.banner .pic img{
+    width: 100%;
+}
+.banner .pic:hover img{
+    transform: scale(.8);
+    transition: .5s;
+}
+.banner .txt{
+    width: 50%;
+    line-height: 2em;
+}
+.banner .txt h2{
+    font-size: 3em;
+    line-height: 1.5em;
+}
+.banner p{
+    margin: 20px 0;
+    font-size: 1em;
+}
+.banner span{
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 0.5em;
+}
+.banner span:hover{
+    background-color: rgb(45, 187, 240);
+    transition: .5s;
+}
+/* =================================================== */
+.description{
+    width: 80%;
+    margin: auto;    
+    padding: 50px;
+}
+.description .title{
+    text-align: center;
+}
+.description h2{
+    font-size: 2em;
+    color: rgb(81, 132, 50);
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.description h2+p{
+    font-size: 1.2em;
+    color: #999;
+    margin-bottom: 2em;
+}
+.description .container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.description ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    line-height: 1.5em;
+}
+.description ul:first-child li{
+    text-align: right;
+}
+.description img{
+    width: 100%;
+}
+.description ul h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.description ul p{
+    font-size: .8em;
+    color: #999;
+}
+/* =========================================================== */
+.productList{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.productList h2{
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(81, 132, 110);
+    padding: 40px;
+}
+.productList .pic img{
+    width: 100%;
+    opacity: 0%;
+}
+.productList ul{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 900;
+}
+.productList li{
+    width: 30%;
+    margin: 20px auto;
+    position: relative;
+}
+.productList .pic, .productList h3{
+    margin-bottom: 20px;
+}
+.productList span ,.productList h3{
+    font-size: 0.8em;
+}
+.productList .sale{
+    color: #fff;
+    background-color: rgb(81, 132, 50);
+    display: inline;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    border-radius:40% 0 40%;
+    font-size: 0.8em;
+}
+.productList .soldout{
+    color: #fff;
+    background-color: rgb(81, 132, 50);
+    display: inline;
+    padding:3px 10px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 5;
+    font-size: 0.8em;
+}
+.productList .pic ul{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+.productList .pic li i{
+    color: rgb(81, 132, 50);
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 50%;
+    margin: 10px;
+    filter: drop-shadow(0 0 2px #555);
+    opacity: 0;
+}
+
+.productList .other-pic img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 100%;
+}
+.productList .title + ul  li:hover .other-pic{
+    opacity: 0;
+    transition: .5s;
+}
+.productList .title + ul  li:hover .pic img{
+    opacity: 50%;
+    transition: .5s;
+}
+.productList .title ~ ul  li:hover i{
+    opacity: 100%;
+    transition: .3s .2s ;
+}
+.productList .pic ul li i:hover {
+    background-color: rgb(81, 132, 50);
+    color: #fff;
+    transition: .1s;
+}
+/* =========================================== */
+.banner2{
+    width: 100%;
+    background-image: url(./banner2-bcc.webp);
+    background-repeat:repeat;
+}
+.banner2 .container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.banner2 .video{
+    width: 50%;
+    aspect-ratio: 560/315;
+}
+.banner2 iframe{
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin:50px auto;
+    align-self: center;
+}
+.banner2 .txt{
+    padding-left: 15%;
+    width: 50%;
+}
+.banner2 .txt h2{
+    font-size: 3em;
+    color: rgb(81, 132, 50);
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.banner2 .txt p{
+    font-size: 1.3em;
+    line-height: 1.2em;
+    margin-bottom: 30px;
+}
+.banner2 .txt span{
+    border: 1px solid #000;
+    padding: 15px 30px;
+}
+.banner2 .txt span:hover {
+    background-color: rgb(81, 132, 50);
+    color: #fff;
+    transition: .3s;
+}
+/* ================================= */
+.shop {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+.shop i{
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+.shop h2{
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.shop ul{
+    display: flex;
+}
+.shop li{
+    width: 25%;
+    box-sizing: border-box;
+    margin: 10px;
+    position: relative;
+}
+.shop img{
+    width: 100%;
+}
+.shadow{
+    width: 100%;
+    height: 100%;
+    background-color: #0008;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+}
+.shop li:hover .shadow{
+    opacity: 100%;
+    transition: .5s;
+}
+/* ======================================= */
+.footer{
+    width: 100%;
+    background-color: #eee;
+    text-align: center;
+    padding: 30px;
+}
+.footer .container{
+    max-width: 1200px;
+    margin: auto;
+    line-height: 5em;
+}
+.footer ul{
+    display: flex;
+    justify-content: center;
+}
+.footer-pic{
+    /* margin-bottom: 20px;    */
+}
+.footer img{
+    width: 20%;
+}
+.footer-txt li:nth-child(n+2)::before{
+    content: '—';
+    font-size: 1.5em;
+    color: #999;
+    margin: 20px;
+}
+.footer-txt li{
+    font-weight: bold;
+    align-self: center;
+    font-size: .8em;
+}
+.community li{
+    width: 2.5em;
+    height: 2.5em;
+    margin:0 10px;
+    background-color: #000;
+    line-height: 2.5em;
+    border-radius: 50%;
+}
+.community i{
+    color: #fff;
+    font-size: 1em;
+}
+.footer p{
+    font-size: 0.5em;
+    color: #aaa;
+}
+.community li:hover{
+    background-color: rgb(81, 132, 50);
+    transition: .5s;
+}
+/* ================================= */
+@media screen and (max-width:768px) {
+    body{
+        width: 768px;
+    }
+    .header{
+
+    }
+    
+    .banner .txt h2{
+        font-size: 30px;   
+    }
+    /* ============================== */
+    
+}

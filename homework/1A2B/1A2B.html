@@ -96,7 +96,7 @@
                 })
                 //判斷長度+是否重複
                 let inputLength = Array.from(new Set(inputArr)).length
-                if (isNum && inputLength == 4) {
+                if (isNum && inputLength == 4 && inputArr.length ==4) {
                     //求出a,b
                     const guess = Array.from(inputArr).reduce((x, y) => {
                         x.push(Number(y))

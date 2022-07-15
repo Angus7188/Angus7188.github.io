@@ -100,7 +100,7 @@
                     const intersect = answer.filter(x => guess.includes(x))
                     const a = intersect.filter(x => answer.indexOf(x) == guess.indexOf(x)).length
                     const b = intersect.length - a
-                    //將資訊增加至版面
+                    //將資訊增加至版面 
                     const p = document.createElement('p')
                     p.classList.add('border-bottom', 'border-white', 'p-1', 'text-start')
                     p.setAttribute('border', 1)

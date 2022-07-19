@@ -816,71 +816,56 @@ a.register {
     padding: 0% 0% 0%;
     box-sizing: border-box;
   }
-
   .banner .banner-txt {
     position: unset;
   }
-
   .banner .banner-pic {
     width: 40%;
     margin: 10%;
   }
-
   .banner .banner-pic img {
     width: 100%;
   }
-
   .banner .banner-txt h2 {
     font-size: 3em;
     line-height: 1.3;
   }
-
   .banner .banner-txt span {
     font-size: 1.7em;
     display: block;
     padding-bottom: 1em;
   }
-
   .banner .banner-txt a {
     border-radius: 5px;
     padding: 1em 2em;
     color: #fff;
     background-color: #000;
   }
-
   .banner .banner-txt a:hover {
     background-color: #0af;
   }
-
   .introduce .title h1 {
     font-size: 2.5em;
   }
-
   .introduce h2 {
     font-size: 2em;
   }
-
   .introduce p {
     font-size: 1.5em;
   }
-
   .intro-content .left-content {
     direction: rtl;
   }
-
   .intro-content .intro-pic {
     order: -1;
   }
-
   .instagram-area .ins-pic a:nth-child(3) {
     display: block;
   }
-
   .contact-group a {
     position: relative;
     margin: 0 1em;
   }
-
   .contact-group a:nth-child(n+1):nth-child(-n+2)::after {
     content: "";
     height: 0.1em;
@@ -892,15 +877,12 @@ a.register {
     right: -2em;
     margin: auto 0;
   }
-
   .productList .product-title h2 {
     font-size: 2em;
   }
-
   .banner2 .row {
     align-items: center;
   }
-
   .banner2 .intro-video-content {
     /* padding-left: 10%; */
     padding: 0px 20px 0px 40px;
@@ -911,21 +893,17 @@ a.register {
   header .user-btns i {
     font-size: 2em;
   }
-
   .user-btns button:last-of-type span {
     font-size: 2em;
     top: -30px;
     right: 20px;
   }
-
   .intro-content .left-content {
     order: -1;
   }
-
   .instagram-area .ins-pic a:nth-child(4) {
     display: block;
   }
-
   footer .contact-group a {
     font-size: 1em;
   }
@@ -934,17 +912,14 @@ a.register {
   footer h2 a {
     width: 20%;
   }
-
   .productList ul li a {
     display: block;
     position: relative;
   }
-
   .productList ul li a:hover {
     color: rgb(81, 132, 50);
     transition: 0.3s;
   }
-
   .productList li .box-shadow {
     position: absolute;
     width: 100%;
@@ -957,7 +932,6 @@ a.register {
     justify-content: center;
     opacity: 0;
   }
-
   .productList li .box-shadow i {
     display: block;
     font-size: 1.5em;
@@ -967,31 +941,25 @@ a.register {
     border-radius: 50%;
     color: #518432;
   }
-
   .productList li .box-shadow i:hover {
     background-color: #518432;
     color: #fff;
     transition: 0.3s;
   }
-
   .productList ul li:hover .box-shadow {
     opacity: 1;
     transition: 0.5s;
   }
-
   .productList ul li:hover img:last-of-type {
     opacity: 1;
   }
-
   .banner2 .intro-video-content a {
     position: relative;
     z-index: 1;
   }
-
   .banner2 span:hover i {
     color: rgb(81, 132, 50);
   }
-
   .banner2 .intro-video-content a::before {
     content: "";
     position: absolute;
@@ -1005,19 +973,15 @@ a.register {
     transform: scaleY(0);
     transform-origin: top;
   }
-
   .banner2 .intro-video-content a:hover::before {
     transform: scaleY(1);
   }
-
   .banner2 .intro-video-content a:hover {
     color: #fff;
   }
-
   .instagram-area .ins-pic a {
     position: relative;
   }
-
   .instagram-area .ins-pic-box-shadow {
     position: absolute;
     top: 0;
@@ -1029,18 +993,15 @@ a.register {
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
   }
-
   .instagram-area .ins-pic a:hover .ins-pic-box-shadow {
     opacity: 1;
     transition: 0.5s;
   }
-
   footer .community a {
     position: relative;
     z-index: 1;
     overflow: hidden;
   }
-
   footer .community a::before {
     content: "";
     position: absolute;
@@ -1054,7 +1015,6 @@ a.register {
     transform-origin: bottom;
     transition: transform 0.5s ease;
   }
-
   footer .community a:hover::before {
     transform: scaleY(1);
   }
@@ -1070,40 +1030,31 @@ a.register {
     position: fixed;
     font-size: 0.8em;
   }
-
   header a {
     color: black;
   }
-
   .sidebar-btn {
     display: none;
   }
-
   .hb {
     display: none;
   }
-
   .close-label {
     display: none;
   }
-
   .logo {
     width: 10%;
   }
-
   .logo a {
     width: 100%;
   }
-
   .logo img {
     width: 100%;
     vertical-align: middle;
   }
-
   .navbar .sidebar-btn {
     display: none;
   }
-
   nav {
     display: flex;
     width: 45%;
@@ -1111,7 +1062,6 @@ a.register {
     box-sizing: border-box;
     /* position: unset; */
   }
-
   nav .navbar {
     display: flex;
     flex-direction: row;
@@ -1122,35 +1072,27 @@ a.register {
     z-index: 0;
     background-color: transparent;
   }
-
   nav .navbar h3 {
     font-size: 1.5em;
   }
-
   .navbar > li {
     padding: 15px 0;
   }
-
   .navbar > li label {
     display: none;
   }
-
   nav [id$=-switch] {
     display: none;
   }
-
   .navbar > li {
     position: relative;
   }
-
   .user-btns button:nth-last-of-type(2) {
     display: block;
   }
-
   .user-btns button:last-of-type span {
     position: unset;
   }
-
   .navbar > li:nth-of-type(3):before,
 .navbar > li:nth-of-type(5):before {
     content: "new";
@@ -1161,61 +1103,50 @@ a.register {
     padding: 4px;
     top: -5px;
   }
-
   .navbar li a {
     display: block;
     padding: 15px;
     color: black;
   }
-
   .navbar li {
     position: relative;
     font-weight: 600;
   }
-
   .navbar li > ul,
 .navbar li > div {
     display: none;
     background-color: #fff;
     position: absolute;
   }
-
   .navbar li:hover > ul,
 .navbar li:hover > div {
     display: block;
     padding: 10px;
   }
-
   .navbar li > ul a:hover,
 .navbar li > div a:hover {
     color: #518432;
   }
-
   .loginUI {
     display: none;
   }
-
   .shop-group {
     width: 400px;
     box-sizing: border-box;
     /* padding:10px; */
   }
-
   .navbar .row li a {
     padding: 15px 5px 15px 0;
     display: inline-block;
   }
-
   .featured-group {
     width: 900px;
     margin-left: -130px;
   }
-
   .featured-group .row [class=col-xl-3] {
     box-sizing: border-box;
     padding: 10px;
   }
-
   .featured-group .row div:nth-of-type(1) li:first-of-type a,
 .featured-group .row div:nth-of-type(1) li:nth-of-type(4) a,
 .featured-group .row div:nth-of-type(2) li:nth-of-type(2) a,
@@ -1225,7 +1156,6 @@ a.register {
 .featured-group .row div:nth-of-type(3) li:first-of-type a {
     position: relative;
   }
-
   .featured-group .row div:nth-of-type(1) li:first-of-type a::before,
 .featured-group .row div:nth-of-type(1) li:nth-of-type(4) a::before,
 .featured-group .row div:nth-of-type(2) li:nth-of-type(2) a::before {
@@ -1237,7 +1167,6 @@ a.register {
     color: #fff;
     padding: 2px;
   }
-
   .featured-group .row div:nth-of-type(1) li:nth-of-type(2) a::before,
 .featured-group .row div:nth-of-type(2) li:nth-of-type(1) a::before,
 .featured-group .row div:nth-of-type(3) li:nth-of-type(5) a::before,
@@ -1250,7 +1179,6 @@ a.register {
     color: #fff;
     padding: 2px;
   }
-
   .featured-group .row div:nth-of-type(3) li:first-of-type a::before {
     top: -9px;
     right: -10px;
@@ -1258,90 +1186,71 @@ a.register {
     color: #fff;
     padding: 2px;
   }
-
   .featured-group .row :nth-child(4) {
     order: 1;
   }
-
   .featured-group .row :nth-child(5) img {
     width: 100%;
     vertical-align: middle;
   }
-
   .shop-contacts {
     width: 150px;
   }
-
   .element-group {
     width: 500px;
     background-image: url(https://cdn.shopify.com/s/files/1/0356/8343/4555/files/banner-menu2.png?v=1585551136);
   }
-
   nav {
     position: unset;
   }
-
   .navbar {
     display: block;
   }
-
   .navbar .home-group {
     width: 800px;
     box-sizing: border-box;
   }
-
   .navbar .home-group li {
     padding: 15px;
     box-sizing: border-box;
   }
-
   .navbar .home-group li a {
     width: 100%;
     padding: 0;
   }
-
   .navbar .home-group li span {
     color: #518432;
   }
-
   .navbar .home-group img {
     width: 100%;
   }
-
   .navbar > li:hover > a {
     color: #518432;
   }
-
   .user-btns {
     flex-grow: 4.5;
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
-
   .user-btns button {
     background-color: transparent;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
   }
-
   .user-btns button i {
     font-size: 1.5em;
   }
-
   .user-btns button:last-child:hover span {
     color: #518432;
   }
-
   .featured-group .row div:last-of-type {
     display: block;
   }
-
   .shadow-box {
     display: none;
   }
-
   .navbar {
     overflow: unset;
     -webkit-overflow-scrolling: unset;

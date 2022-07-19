@@ -14,6 +14,7 @@ const noteTitle = document.querySelector('.storage h3')
 //window.onload
 window.onload = function () {
     init()
+    
 }
 
 //初始化
@@ -67,6 +68,7 @@ function render() {
 
     //操控記事本介面
     let dateBtn = document.querySelectorAll('.date:not(.fadeout)')
+    
     dateBtn.forEach(btn => {
         btn.onclick = () => {
             openNote(state.getFullYear(), state.getMonth() + 1, btn.childNodes[0].data)
@@ -93,7 +95,7 @@ function renderDate(date, list) {
 
     //日期+1
     date.setDate(date.getDate() + 1)
-
+    cell.scroll(100, cell.scrollHeight)
 }
 
 //記事本介面UI
@@ -190,4 +192,5 @@ function showDateInfo() {
             btn.appendChild(ul)
         }
     })
+    
 }

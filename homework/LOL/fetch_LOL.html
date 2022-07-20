@@ -137,27 +137,7 @@
                 .then((res) => res.json())
                 .then((res) => {
                     heroObj = res.data
-                    let heroArr = Object.keys(heroObj)
-                    heroArr.forEach((hero, index) => {
-                        cardArr.push({ "id": heroObj[hero].id, "name": heroObj[hero].name, "description": heroObj[hero].blurb, "info": { "attack": heroObj[hero].info.attack, "defense": heroObj[hero].info.defense, "magic": heroObj[hero].info.magic, "tags": heroObj[hero].tags } })
-                    })
-                    cardArr.forEach(card => {
-                        cardbox.appendChild(getInfo(card.id, card.name, card.description, card.info))
-                    })
-                })
-                .catch((res)=>console.log(res))
-                .finally()
-
-        }
-
-        function getInfo(id, name, description, info) {
-            let cloneCard = cardTemplate.content.cloneNode(true)
-            cloneCard.querySelector('.card-title').innerText = `${id} - ${name}`
-            cloneCard.querySelector('.card-text').innerText = `${description.substring(0, 50)}...more`
-            cloneCard.querySelector('img').src = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`
-
-            cloneCard.querySelectorAll('.btn-list').forEach(btn=>{
-                btn.onclick = function(){ setModal(id, name, info) }
+                    let he
             })
 
             return cloneCard

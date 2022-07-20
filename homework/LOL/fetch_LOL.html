@@ -41,6 +41,13 @@
             background-color: #fff;
             border-radius: 50%;
         }
+        .modal-frame-body{
+            height: 300px;
+        }
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 
@@ -100,7 +107,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body modal-frame-body">
-                    <iframe class="modalframe-frame" src="" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TCQ9MEZL1Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -137,7 +144,27 @@
                 .then((res) => res.json())
                 .then((res) => {
                     heroObj = res.data
-                    let he
+                    let heroArr = Object.keys(heroObj)
+                    heroArr.forEach((hero, index) => {
+                        cardArr.push({ "id": heroObj[hero].id, "name": heroObj[hero].name, "description": heroObj[hero].blurb, "info": { "attack": heroObj[hero].info.attack, "defense": heroObj[hero].info.defense, "magic": heroObj[hero].info.magic, "tags": heroObj[hero].tags } })
+                    })
+                    cardArr.forEach(card => {
+                        cardbox.appendChild(getInfo(card.id, card.name, card.description, card.info))
+                    })
+                })
+                .catch((res)=>console.log(res))
+                .finally()
+
+        }
+
+        function getInfo(id, name, description, info) {
+            let cloneCard = cardTemplate.content.cloneNode(true)
+            cloneCard.querySelector('.card-title').innerText = `${id} - ${name}`
+            cloneCard.querySelector('.card-text').innerText = `${description.substring(0, 50)}...more`
+            cloneCard.querySelector('img').src = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`
+
+            cloneCard.querySelectorAll('.btn-list').forEach(btn=>{
+                btn.onclick = function(){ setModal(id, name, info) }
             })
 
             return cloneCard

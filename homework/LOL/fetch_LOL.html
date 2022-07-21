@@ -20,7 +20,7 @@
 
         .title-img {
             width: 20%;
-            margin:  auto;
+            margin: auto;
         }
 
         .card {
@@ -33,20 +33,48 @@
             background-color: #666;
             transition: .3s;
         }
-        .modal-content{
+
+        .modal-content {
             background-color: #333;
             color: #fff;
         }
-        .btn-close{
+
+        .btn-close {
             background-color: #fff;
             border-radius: 50%;
         }
-        .modal-frame-body{
+
+        .modal-frame-body {
             height: 300px;
         }
-        iframe{
+
+        iframe {
             width: 100%;
             height: 100%;
+        }
+
+        /* 網頁捲軸【寬度】 */
+        ::-webkit-scrollbar {
+            width: 10px;
+            border-radius: 50px;
+        }
+
+        /* 網頁捲軸【背景】顏色 */
+        ::-webkit-scrollbar-track {
+            background: #000;
+        }
+
+
+        /* 網頁捲軸【把手】顏色 */
+        ::-webkit-scrollbar-thumb {
+            background: #ccc;
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+
+        /* 網頁捲軸【滑過時】把手的顏色 */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #fff;
         }
     </style>
 </head>
@@ -54,8 +82,8 @@
 <body>
 
     <div class="title-img"><a href="#"><img
-        src="./kisspng-league-of-legends-esports-logo-font-game-v-v-pls173-5bab06e84cca16.5479342215379350803145.png"
-        alt="LOGO" class="w-100"></a></div>
+                src="./kisspng-league-of-legends-esports-logo-font-game-v-v-pls173-5bab06e84cca16.5479342215379350803145.png"
+                alt="LOGO" class="w-100"></a></div>
 
 
     <!-- Card -->
@@ -107,7 +135,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body modal-frame-body">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TCQ9MEZL1Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TCQ9MEZL1Y4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -152,7 +183,7 @@
                         cardbox.appendChild(getInfo(card.id, card.name, card.description, card.info))
                     })
                 })
-                .catch((res)=>console.log(res))
+                .catch((res) => console.log(res))
                 .finally()
 
         }
@@ -163,8 +194,8 @@
             cloneCard.querySelector('.card-text').innerText = `${description.substring(0, 50)}...more`
             cloneCard.querySelector('img').src = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`
 
-            cloneCard.querySelectorAll('.btn-list').forEach(btn=>{
-                btn.onclick = function(){ setModal(id, name, info) }
+            cloneCard.querySelectorAll('.btn-list').forEach(btn => {
+                btn.onclick = function () { setModal(id, name, info) }
             })
 
             return cloneCard

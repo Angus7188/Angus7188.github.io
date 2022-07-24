@@ -259,4 +259,3 @@ function reload() {
     document.querySelectorAll('.accordion-button').forEach(x => { x.classList.remove('collapse') })
     document.querySelectorAll('.accordion-collapse').forEach(x => { x.classList.add('show') })
 }
-

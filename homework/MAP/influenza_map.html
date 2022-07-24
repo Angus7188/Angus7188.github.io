@@ -116,6 +116,7 @@
             minZoom: 8,
             maxZoom: 19
         })
+        
 
         //set resource to map
         map.addLayer(layer)
@@ -141,7 +142,7 @@
                     let [areaRes, influenzaRes] = res
 
                     areaData = areaRes.data
-                    influenzaData = yearSelect.value == '' ? influenzaRes.data : influenzaRes.data.filter(x => x.研判年份 == yearSelect.value)
+                    influenzaData = yearSelect.value = influenzaRes.data
 
 
                     inputData()
@@ -159,7 +160,8 @@
                     yearSelect.addEventListener('change', function () {
                         influenzaData = influenzaRes.data.filter(x => x.研判年份 == yearSelect.value)
 
-                        inputData()
+                        inputData() 
+                        markers.clearLayers()
                         setMarker()
                     })
 
@@ -219,6 +221,8 @@
                 }
             }).filter(x => x != undefined && x.Lat != undefined && x.Lng != undefined);
 
+
+
         }
 
         function setMarker() {
@@ -238,7 +242,6 @@
                 `)
 
                 marker.addEventListener('click', function () {
-
                     //title
                     document.querySelector('strong').innerText = `${data.縣市} ${data.鄉鎮}`
                     //content
@@ -259,6 +262,7 @@
                     content.append(p1, p2, p3, p4, p5, p6)
                 })
                 //test
+                
                 markers.addLayer(marker)
             })
             map.addLayer(markers)
